@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
+#include "HashTableProducts.h"
 
+//
 using namespace std;
 
 void printHelp()
@@ -52,6 +54,9 @@ void bootStrap()
 
 int main(int argc, char const *argv[])
 {
+    Product p;
+    HashTableProducts h;
+    //h.addProduct(p);
     string line;
     bootStrap();
     while (getline(cin, line) && line != ":quit")
